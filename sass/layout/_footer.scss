@@ -1,0 +1,133 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--footer-background-color);
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    color: var(--contacts-color);
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__socials {
+    margin-left: 70px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--contacts-color);
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--contacts-color);
+  }
+}
+
+// CONTACTS IN FOOTER
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.address__email-phone {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--contacts-color);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.socials__list {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--contacts-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.email {
+  margin-left: 93px;
+
+  &__input {
+    display: flex;
+  }
+
+  &__input-field {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    align-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--contacts-color);
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+      outline: none;
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 20px;
+      margin-left: 10px;
+      background-image: url(../images/send.svg);
+    }
+  }
+}

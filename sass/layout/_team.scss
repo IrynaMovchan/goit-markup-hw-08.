@@ -1,0 +1,57 @@
+.team {
+  background-color: var(--background-filters-btn-color);
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: -30px;
+  }
+
+  &__worker {
+    padding-bottom: 30px;
+    margin-left: 30px;
+    background-color: var(--contacts-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+.worker__photo {
+  margin-bottom: 30px;
+}
+
+.worker__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: inherit;
+  margin-bottom: 10px;
+}
+
+.worker__position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+
+.worker .socials__link {
+  fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: var(--contacts-color);
+  }
+
+  &:focus {
+    fill: var(--contacts-color);
+  }
+}
