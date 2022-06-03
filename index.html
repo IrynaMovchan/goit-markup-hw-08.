@@ -26,6 +26,18 @@
         <!--Навигация-->
         <nav class="navigation">
           <a lang="en" href="./index.html" class="header__logo logo link"><span>Web</span>Studio</a>
+          <button type="button" class="menu__button is-open" data-menu-button>
+            <svg
+              width="40"
+              height="40"
+              class="menu__icon"
+              aria-expanded="false"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/icons.svg#menu-close" class="icon__menu-close"></use>
+              <use href="./images/icons.svg#menu" class="icon__menu"></use>
+            </svg>
+          </button>
           <ul class="menu-list">
             <li class="menu-list__item list">
               <a href="./index.html" class="menu-list__link link current">Студия</a>
@@ -38,7 +50,7 @@
             </li>
           </ul>
         </nav>
-        <!--Почта и телефон-->
+        <!--Почта и телефон -->
         <ul class="contacts header__contacts">
           <li class="contacts__item list">
             <div>
@@ -325,35 +337,35 @@
                 </svg>
               </a>
             </li>
-            <li class="clients__cards list">
+            <li class="clients__item list">
               <a href="" class="clients__logo link">
                 <svg class="clients__icon" width="40" height="52">
                   <use href="./images/icons.svg#client-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__cards list">
+            <li class="clients__item list">
               <a href="" class="clients__logo link">
                 <svg class="clients__icon" width="43" height="41">
                   <use href="./images/icons.svg#client-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__cards list">
+            <li class="clients__item list">
               <a href="" class="clients__logo link">
                 <svg class="clients__icon" width="84" height="41">
                   <use href="./images/icons.svg#client-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__cards list">
+            <li class="clients__item list">
               <a href="" class="clients__logo link">
                 <svg class="clients__icon" width="63" height="45">
                   <use href="./images/icons.svg#client-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__cards list">
+            <li class="clients__item list">
               <a href="" class="clients__logo link">
                 <svg class="clients__icon" width="94" height="44">
                   <use href="./images/icons.svg#client-6"></use>
@@ -366,7 +378,7 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div>
+        <div class="footer__contacts">
           <a lang="en" href="./index.html" class="footer__logo logo link"><span>Web</span>Studio</a>
           <!-- Контакты -->
           <address class="address">
@@ -385,7 +397,7 @@
                   >info@example.com</a
                 >
               </li>
-              <li class="list">
+              <li class="list address__item">
                 <a href="tel:+380991111111" class="footer__address address__email-phone link"
                   >+38 099 111 11 11</a
                 >
@@ -510,5 +522,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

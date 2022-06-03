@@ -1,3 +1,7 @@
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -5,7 +9,7 @@
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowarp;
+  white-space: nowrap;
   clip-path: insert(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
