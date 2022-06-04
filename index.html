@@ -26,7 +26,7 @@
         <!--Навигация-->
         <nav class="navigation">
           <a lang="en" href="./index.html" class="header__logo logo link"><span>Web</span>Studio</a>
-          <button type="button" class="menu__button is-open" data-menu-button>
+          <button type="button" class="menu__button" data-menu-button>
             <svg
               width="40"
               height="40"
@@ -139,19 +139,30 @@
           <ul class="actions__list">
             <li class="actions__item list">
               <div class="actions__wrap">
-                <img src="./images/action-1.jpg" alt="Человек печатает на клавиатуре" width="370" />
+                <img
+                  srcset="./images/action-1.jpg 1x, ./images/action-1-2x.jpg 2x"
+                  src="./images/action-1.jpg"
+                  alt="Человек печатает на клавиатуре"
+                  width="370"
+                />
                 <p class="actions__description">Десктопные приложения</p>
               </div>
             </li>
             <li class="actions__item list">
               <div class="actions__wrap">
-                <img src="./images/action-2.jpg" alt="Человек держит телефон в руках" width="370" />
+                <img
+                  srcset="./images/action-2.jpg 1x, ./images/action-2-2x.jpg 2x"
+                  src="./images/action-2.jpg"
+                  alt="Человек держит телефон в руках"
+                  width="370"
+                />
                 <p class="actions__description">Мобильные приложения</p>
               </div>
             </li>
             <li class="actions__item list">
               <div class="actions__wrap">
                 <img
+                  srcset="./images/action-3.jpg 1x, ./images/action-3-2x.jpg 2x"
                   src="./images/action-3.jpg"
                   alt="Человек смотрит на палитру цветов на планшете"
                   width="370"
@@ -168,12 +179,26 @@
           <h2 class="team__title section__title title">Наша команда</h2>
           <ul class="team__cards">
             <li class="team__worker worker list">
-              <img
-                class="worker__photo"
-                src="./images/team-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team-1.jpg 1x, ./images/team-1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team-1-tab.jpg 1x, ./images/team-1-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team-1-mob.jpg 1x, ./images/team-1-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="worker__photo"
+                  src="./images/team-1-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="100%"
+                />
+              </picture>
               <h3 class="worker__name">Игорь Демьяненко</h3>
               <p class="worker__position" lang="en">Product Designer</p>
               <ul class="socials__list">
@@ -208,7 +233,26 @@
               </ul>
             </li>
             <li class="team__worker worker list">
-              <img class="worker__photo" src="./images/team-2.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team-2.jpg 1x, ./images/team-2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team-2-tab.jpg 1x, ./images/team-2-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team-2-mob.jpg 1x, ./images/team-2-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="worker__photo"
+                  src="./images/team-2-mob.jpg"
+                  alt="Ольга Репина"
+                  width="100%"
+                />
+              </picture>
               <h3 class="worker__name">Ольга Репина</h3>
               <p class="worker__position" lang="en">Frontend Developer</p>
               <ul class="socials__list">
@@ -243,12 +287,26 @@
               </ul>
             </li>
             <li class="team__worker worker list">
-              <img
-                class="worker__photo"
-                src="./images/team-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team-3.jpg 1x, ./images/team-3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team-3-tab.jpg 1x, ./images/team-3-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team-3-mob.jpg 1x, ./images/team-3-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="worker__photo"
+                  src="./images/team-3-mob.jpg"
+                  alt="Николай Тарасов"
+                  width="100%"
+                />
+              </picture>
               <h3 class="worker__name">Николай Тарасов</h3>
               <p class="worker__position" lang="en">Marketing</p>
               <ul class="socials__list">
@@ -283,12 +341,26 @@
               </ul>
             </li>
             <li class="team__worker worker list">
-              <img
-                class="worker__photo"
-                src="./images/team-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team-4.jpg 1x, ./images/team-4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team-4-tab.jpg 1x, ./images/team-4-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team-4-mob.jpg 1x, ./images/team-4-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="worker__photo"
+                  src="./images/team-4-mob.jpg"
+                  alt="Михаил Ермаков"
+                  width="100%"
+                />
+              </picture>
               <h3 class="worker__name">Михаил Ермаков</h3>
               <p class="worker__position" lang="en">UI Designer</p>
               <ul class="socials__list">
