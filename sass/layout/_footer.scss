@@ -10,12 +10,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-    }
-  }
-
-  &__contacts {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-left: 76px;
+      justify-content: space-around;
     }
   }
 
@@ -31,10 +26,6 @@
   }
 
   &__socials {
-    @media screen and (min-width: 768px) {
-      margin-left: 165px;
-    }
-
     @media screen and (min-width: 1200px) {
       margin-left: 70px;
     }
@@ -96,8 +87,6 @@
 }
 
 .socials {
-  margin-bottom: 60px;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
